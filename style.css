@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    background-color: #fff;
+
+} 
+#home{
+    width: 100%;
+    min-height: 100vh;
+} 
+#nav{
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+#nav img{
+    width:100px ;
+}
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#nav a{
+    text-decoration: none;
+    font-weight: 400;
+    color:black;
+    letter-spacing:-1px;
+    font-size: 1vw;
+}
+#nav i{
+    margin-top: 3px;
+    font-size: 20px;
+}
+#home #homemain{
+    width: 100%;
+    padding: 15vw 16vw;
+}
+#homemain h1{
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+.headings{
+    display: flex;
+    gap:30px ;
+}
+#homemain .headings h1{
+    font-size:6vw;
+    font-weight: 800;
+    letter-spacing:-4px;
+    line-height:1 ;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+
+
+}
+#homemain .headings h1:hover{
+    color: #000;
+}
+#homelast{
+    padding: 3vw 15vw;
+}
+#homelast p{
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    width: 70%;
+    
+}
+#homelast p::selection{
+    color: #fff;
+    background-color: #000;
+}
+#featured{
+    padding: 10vw 15vw;
+}
+.fheading >h1{
+    line-height: 1;
+    font-size: 3vw;
+    font-weight: 400;
+
+}
+.fheading>h1:nth-child(2){
+    color:transparent;
+    -webkit-text-stroke: 1px #000;
+}
+#fimages{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+}
+#fleft{
+    overflow:hidden;
+    width: 45%;
+    height:inherit;
+}
+.fleftlm{
+    width: 100%;
+    height: inherit ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fleftlm h1{
+     font-size: 2.5vw;
+     line-height: 1;
+     font-weight: 400;
+     text-transform: capitalize;
+     margin: 1.5vw 0;
+}
+.fleftlm h4{
+    opacity:.5 ;
+}
+.fleftlm h3{
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+#fright{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height:inherit;
+}
+ #fright .images{
+    width: 100%;
+    height: 90%;
+    background-color: darkorchid;
+    overflow: hidden;
+    
+
+}
+
+#fright .images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .btn{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.btn button{
+    padding: 1vw 2vw;
+    border: 1.5px solid gray;
+    background-color: #fff;
+    border-radius: 100px;
+    font-size: 1vw;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+#dev{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+#dev h1{
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 1;
+    width: 60%;
+    text-transform:capitalize;
+}
+#dev p{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    letter-spacing: -.5px;
+    width: 60%;
+}
+#slides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 8vw;
+
+}
+.slide{
+    width: 30%;
+
+}
+.slide .img{
+    width:100% ;
+    height: 250px;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .tag{
+    border-radius: 100px;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 10px 22px;
+    background-color: #edf1ece8;
+}
+.slide h3{
+    font-size: 1.2vw;
+    letter-spacing: -.5px;
+    font-weight: 400;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(11, 3, 1);
+    color: white;
+    text-decoration: none;
+  }
+  footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 4VW;
+  }
+
+
+@media screen and (max-width: 600px) {
+    #homemain .headings h1{
+        font-size:15vw;
+        font-weight: 800;
+        letter-spacing:.5px;
+        line-height:1 ;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+    
+    
+    }
+    #nav a{
+        
+        display:none;
+    }
+    #nav i{
+        margin-top: 3px;
+        font-size: 20px;
+    }
+    #home #homemain{
+        width: 100%;
+        padding: 15vw 8vw;
+    }
+    #homemain h1{
+        font-weight: 400;
+        font-size: 3vw;
+    }
+    .headings{
+        display: flex;
+        gap:10px ;
+        margin-top: 5px;
+        flex-direction: column;
+    }
+    #homelast{
+        padding:0vw 8vw;
+    }
+    #homelast p{
+        font-size: 5vw;
+        font-weight: 400;
+        width: 90%;
+        
+    }
+    #featured{
+        padding:0vw 8vw;
+    }
+    .fheading >h1{
+        line-height: 1;
+        font-size: 10vw;
+        font-weight: 400;
+    
+    }
+    
+    #fimages{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height:50vh;
+        margin-top: 5vw;
+    }
+    #fleft{
+        overflow:hidden;
+        width: 50%;
+        height:inherit;
+    }
+    .fleftlm{
+        width: 100%;
+        height: inherit ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .fleftlm h1{
+         font-size: 5vw;
+         line-height: 1;
+         font-weight: 400;
+         text-transform: capitalize;
+         margin: 1.5vw 0;
+    }
+    .fleftlm h4{
+        opacity:.5 ;
+    }
+    .fleftlm h3{
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+    #fright{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        height:inherit;
+    }
+     #fright .images{
+        width: 100%;
+        height: 90%;
+        background-color: rgb(116, 122, 212);
+    }
+    .btn button{
+        
+        font-size: 4vw;
+        
+    }
+    #dev{
+        width: 100%;
+        padding: 5vw 15vw;
+    }
+    #dev h1{
+        font-size: 5vw;
+        font-weight: 600;
+        width: 100%;
+    }
+    #dev p{
+        font-size: 4vw;
+        width: 100%;
+    }
+    #slides{
+        
+        flex-direction: column;
+    
+    }
+    .slide{
+        width: 90%;
+    
+    }
+    
+    .slide h3{
+        font-size: 3vw;
+        
+        
+    }
+
+    
+    
+
+    
+
+}
